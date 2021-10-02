@@ -440,3 +440,16 @@ $(function() {
 
 });
 
+
+// Pre loader for website
+
+var loader = document.querySelector(".loader");
+
+window.addEventListener("load", hideit);
+
+function hideit() {
+  setTimeout(() => {
+    loader.classList.add("dissapear");
+  }, 350);
+}
+
